@@ -4,14 +4,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './NaviBar.css';
-import logo from './eq.png';
+//import logo from './eq.png';
 
 const NavigationBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="navbar">
-      <img src={logo} alt="logo" className="navbar-logo" />
+      <img src='./eq.png' alt="logo" className="navbar-logo" />
       <div onClick={() => setIsOpen(!isOpen)} className="navbar-hamburger">
         <div className={isOpen ? "line1" : ""}></div>
         <div className={isOpen ? "line2" : ""}></div>

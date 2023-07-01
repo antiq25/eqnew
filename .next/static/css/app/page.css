@@ -1,0 +1,524 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[12].use[3]!./src/app/Cards.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+.container {
+ display:flex;
+ position: relative;
+ width: 100%;
+ height: 80%;
+}
+
+.cards {
+  width: calc(100% - 2em);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1em;
+  grid-template-areas: "a a b c" "a a d d";
+  width: 100%;
+}
+
+.card {
+  width: 100%;
+  margin:1%;
+  position: relative;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+
+}
+.card:last-child {
+  margin-bottom: 0;
+}
+.card:before {
+  height: 0;
+  content: "";
+  display: block;
+  padding-bottom: 47.36%;
+}
+.card.content:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  content: "";
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black);
+}
+.card:nth-child(1) {
+  grid-area: a;
+}
+.card:nth-child(2) {
+  grid-area: b;
+}
+.card:nth-child(3) {
+  grid-area: c;
+}
+.card:nth-child(4) {
+  grid-area: d;
+}
+.card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.card-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-label {
+  position: absolute;
+  top: 0.45rem;
+  left: 0.45rem;
+  background: #089f8a;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 0.7em;
+  color: white;
+  padding: 0.2em;
+}
+.card-title {
+  position: absolute;
+  left: 1em;
+  bottom: 1em;
+  color: #d6dbeb;
+  z-index: 5;
+  font-size: 0.8em;
+}
+.card.form {
+  position: relative;
+}
+.card.form:before {
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+}
+.card.form:after {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  width: calc(100% - 1em);
+  height: calc(100% - 1em);
+  content: "";
+  background: #252833;
+}
+.card.form .form-title {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 7vw;
+  font-weight: 900;
+  z-index: 5;
+  text-transform: uppercase;
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.card.form .form-title:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  content: "Sign Up";
+  opacity: 0.5;
+  filter: blur(10px);
+  transition: all 0.25s ease;
+  z-index: 2;
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  transform: translateX(-50%) translateY(-50%);
+}
+.card:nth-child(2) .card-label {
+  background: #ef4e7b;
+}
+.card:nth-child(3) .card-label {
+  background: #1098ad;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.35);
+}
+.card:hover .form-title:before {
+  filter: blur(3px);
+  opacity: 0.7;
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[12].use[3]!./src/app/index.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+
+:root {
+  --foreground: #ffffff;
+  --background: linear-gradient(to bottom right, #282c43, #1e2033);
+  --background2: linear-gradient(to bottom right, #282c43, #1e2033, .25);
+  --selection-foreground: #1E1E2E;
+  --selection-background: #F5E0DC;
+  --accent-color: #B4BEFE;
+  --text-color: #6C7086;
+  --highlight-color: #F9E2AF;
+  --primary-color: #74C7EC;
+  --dark-background: #45475A;
+  --dark-text: #585B70;
+  --secondary-color: #F38BA8;
+  --success-color: #A6E3A1;
+  --warning-color: #F9E2AF;
+  --info-color: #89B4FA;
+  --error-color: #F5C2E7;
+  --light-success-color: #94E2D5;
+  --light-background: #BAC2DE;
+  --light-text: #A6ADC8;
+  --dark-blue-pastel: #5C6B7A;
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+      font-size: 14px;
+  }
+  .container {
+      padding: 5px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 601px to 767px) */
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  body {
+      font-size: 16px;
+  }
+  .container {
+      padding: 10px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px to 991px) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+      font-size: 18px;
+  }
+  .container {
+      padding: 15px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px to 1199px) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  body {
+      font-size: 20px;
+  }
+  .container {
+      padding: 20px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body {
+      font-size: 22px;
+  }
+  .container {
+      padding: 25px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+html {
+  background: var(--background2);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'SFNSMono Nerd Font', monospace;
+  background: var(--background);
+  color: var(--text-color);
+}
+
+h1 {
+  font-size:25px;
+  padding: 5px;
+  margin:2%;
+  color:white;
+}
+.glass-header a {
+  color: var(--foreground);;
+}
+
+.glass-hero h1 {
+  color: var(--foreground);
+}
+
+.glass-hero p {
+  color: var(--foreground);
+}
+
+.btn {
+  color: var(--foreground);
+}
+
+.btn:hover {
+  background-color: var(--primary-color);
+}
+
+.glass-section {
+  background: var(--background2);
+}
+
+.glass-section h2 {
+  color: var(--foreground);
+}
+
+.glass-footer {
+  background: linear-gradient(to bottom right, #282c43, #1e2033, 0.25);
+}
+
+.glass-footer p {
+  color: var(--foreground);
+}
+
+.glass-footer a {
+  background: rgba(33, 97, 140, 0.5);
+}
+
+.glass-header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.glass-header li {
+  margin-right: 20px;
+}
+
+.glass-hero {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 100px 20px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.glass-hero p {
+  font-size: 18px;
+  color: var(--text-color);
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--accent-color);
+  color: var(--foreground);
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--primary-color);
+}
+
+.glass-section {
+  background: linear-gradient(to bottom right, #282c43, #1e2033, 0.25);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 40px 20px;
+  margin-bottom: 40px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.glass-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--foreground);
+}
+
+.glass-footer {
+  background: linear-gradient(to bottom right, #282c43, #1e2033, 0.25);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 20px;
+  bottom: 0;
+  z-index: 1;
+}
+
+.glass-footer p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--foreground);
+}
+
+.glass-footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.glass-footer li {
+  margin-left: 20px;
+}
+
+.glass-footer a {
+  background: linear-gradient(to bottom right, #282c43, #1e2033, 0.25);
+  text-decoration: none;
+  color: var(--foreground);
+  padding: 5px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.glass-footer a:hover {
+  background: linear-gradient(to bottom right, #282c43, #1e2033, 0.25);
+}
+
+.glass-footer svg {
+  width: 20px;
+  height: 20px
+}
+
+.pClassSpan {
+  font-size: 11px;
+  font-weight: lighter;
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[12].use[3]!./src/app/NaviBar.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to bottom right, #282c43, #1e2033);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+
+  color: #fff;
+  padding: 20px 50px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  z-index: 2;
+  animation: border-animation 2s infinite;
+}
+
+@keyframes border-animation {
+  0% { border-color: #fff; }
+  50% { border-color: #ddd; }
+  100% { border-color: #fff; }
+}
+
+
+
+.navbar-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  
+}
+
+.navbar-hamburger div {
+  width: 2rem;
+  height: 0.25rem;
+  background-color: #fff;
+  transition: all 0.3s linear;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  animation: link-animation 2s infinite;
+}
+
+@keyframes link-animation {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.navbar-item {
+  list-style: none;
+}
+
+.navbar-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-link:hover {
+  color: #ddd;
+  animation: link-hover-animation 1s infinite;
+}
+
+@keyframes link-hover-animation {
+  0% { color: #ddd; }
+  50% { color: #bbb; }
+  100% { color: #ddd; }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar-hamburger {
+    display: flex;
+  }
+
+  .navbar-links {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar-item {
+    margin: 15px 0;
+  }
+
+  .navbar-hamburger .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .navbar-hamburger .line2 {
+    opacity: 0;
+  }
+
+  .navbar-hamburger .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+
+.navbar-logo {
+  width: -moz-fit-content;
+  width: fit-content;
+  max-height: 50px;
+  max-width: 50px;
+}
